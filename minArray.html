@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function minArr() {
+        if(arr.length === 0){
+            return -1;
+        }
+        let min = parseInt(arr[0]);
+        for( let i =1; i<= arr.length; i++){
+            if(parseInt(arr[i])<min){
+                min = arr[i];
+            }
+        }
+        return min;
+    }
+
+    let arr= [7, 12, 6, 9, 20, 56, 89]
+
+    let min = minArr(arr);
+        alert(min);
+
+</script>
+
+</body>
+</html>
